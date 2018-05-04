@@ -1,5 +1,6 @@
-afile = 'C:\\Users\\sainig\\Desktop\\Spring_2018_semester\\MxM\\MxM-GregorySaini\\songList.txt'
-outputfile = 'C:\\Users\\sainig\\Desktop\\Spring_2018_semester\\MxM\\MxM-GregorySaini\\songFinal.txt'
+#D:\MxM-Project
+afile = 'D:\\MxM-Project\\songList.txt'
+outputfile = 'D:\\MxM-Project\\SongCSV.txt'
 f = open(afile, 'r')
 output = open(outputfile, 'w')
 
@@ -27,7 +28,7 @@ print(len(songTitle))
 #print(len(album))
 
 for x in range( len(songTitle)  ):
-    song = songTitle[x] + "\t" + singer[x] + "\t" + album[x] + "\n"
+    song = songTitle[x] + "," + singer[x] + "," + album[x] + "\n"
     #print(song)
     output.write(song)
 
